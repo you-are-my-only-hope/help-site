@@ -36,7 +36,8 @@ $(document).ready(function(){
 		div_var_btn.text("Variables");
 
 		div_var_btn.attr({
-			"id": "vars"
+			"id": "vars",
+			"class": "waves-teal btn-flat center-align"
 		});
 
 		div_head.appendTo(li);
