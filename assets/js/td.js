@@ -3,6 +3,8 @@ $(document).ready(function(){
 
 	$("#javascript").click(function(){
 
+		$(".table").html("");
+
 		var ul = $("<ul>");
 
 		ul.attr({
@@ -19,8 +21,10 @@ $(document).ready(function(){
 		var div_head = $("<div>");
 		var div_variable = $("<div>");
 		var div_if = $("<div>");
+		var div_else = $("<div>");
 		var div_var_btn = $("<button>");
 		var div_if_btn = $("<button>");
+		var div_else_btn = $("<button>");
 
 		div_head.attr({
 			"class": "collapsible-header",
@@ -39,8 +43,14 @@ $(document).ready(function(){
 
 		});
 
+		div_else.attr({
+			"class": "collapsible-body"
+
+		});
+
 		div_var_btn.text("Variables");
 		div_if_btn.text("If");
+		div_else_btn.text("Else");
 
 		div_var_btn.attr({
 			"id": "vars",
@@ -54,11 +64,19 @@ $(document).ready(function(){
 			"data-index": "if"
 		});
 
+		div_else_btn.attr({
+			"id": "else",
+			"class": "waves-teal btn-flat center-align guide",
+			"data-index": "else"
+		});
+
 		div_head.appendTo(li);
 		div_variable.appendTo(li);
 		div_if.appendTo(li);
+		div_else.appendTo(li);
 		div_var_btn.appendTo(div_variable);
 		div_if_btn.appendTo(div_if);
+		div_else_btn.appendTo(div_else);
 
 		$('.collapsible').collapsible();
 
@@ -78,6 +96,9 @@ $(document).ready(function(){
 					break;
 				case "if":
 					if_statement();
+					break;
+				case "else":
+					else_statement();
 					break;
 
 			} // End of Switch Statement
@@ -103,35 +124,74 @@ function vars() {
 
 function if_statement(){
 
-	var fs = require("fs");
-
-	fs.readFile("../images/if_intro.js", "utf8", function(error, data) {
-
-	  // We will then print the contents of data
-	  console.log(data);
-
-	  // Then split it by commas (to make it more readable)
-	  var dataArr = data.split(",");
-
-	  // We will then re-display the content as an array for later use.
-	  console.log(dataArr);
-
-	});
 
 
 	$(".display").html("");
 
-	var img = $("<img>");
+	var div = $("<div>");
+	var div_ex1 = $("<div>");
 
-	img.attr({
-		"src": "assets/images/test.png"
+	div.attr({
+		"class": "center-align"
 	});
 
-	$(".display").html(img);
+	var text = "<h3>If Statement</h3><h4>Block Level Code</h4><p>HAS to take a parameter</p><p>Does not need a else statement unless needed</p><p>Start with key work 'if'</p><p>Then () this is where the parameter is entered</p><p>Then curly braces </p>"; 
+
+
+	var text_ex1 = "<h5>Example 1</h5> \
+					<br> \
+					<p><font color='red'>if</font> (<font color='blue'>5</font> <font color='red'>==</font> <font color='blue'>5</font>) { </p> \
+					<br> \
+					<p> &nbsp &nbsp &nbsp	// If the condition is met or true in the ()</p> \
+					<p>	&nbsp &nbsp &nbsp // will do the logic inside the curly brace</p> \
+					<br> \
+					<p>	&nbsp &nbsp &nbsp console.log('<font color='orange'>They are equal</font>');</p> \
+					} // End of If Statement" ;
+
+	div.append(text);
+	div_ex1.append(text_ex1);
+
+	$(".display").html(div);
+	$(".display").append(div_ex1);
 
 } // End of If Statement Function
 
 
+function else_statement(){
+
+	$(".display").html("");
+
+	var div = $("<div>");
+	var div_ex1 = $("<div>");
+
+	div.attr({
+		"class": "center-align"
+	});
+
+	var text = "<h3>Else Statement</h3><h4>Block Level Code</h4><p>Else does NOT take a parameter</p><p>Has to have an if statement attached to it</p><p>Start with an if key work</p><p>TAfter the curly brace for the if statement</p><p>type the key word else</p>"; 
+
+
+	var text_ex1 = "<h5>Example 1</h5> \
+					<br> \
+					<p><font color='red'>if</font> (<font color='blue'>5</font> <font color='red'>==</font> <font color='blue'>6</font>) { </p> \
+					<br> \
+					<p> &nbsp &nbsp &nbsp	// If the condition is met or true in the ()</p> \
+					<p>	&nbsp &nbsp &nbsp // will do the logic inside the curly brace</p> \
+					<br> \
+					<p>	&nbsp &nbsp &nbsp console.log('<font color='orange'>They are equal</font>');</p> \
+					} <font color='red'>else</font> {  \
+					<p> &nbsp &nbsp &nbsp	// If the condition is met or true in the ()</p> \
+					<p>	&nbsp &nbsp &nbsp // will do the logic inside the curly brace</p> \
+					<p>	&nbsp &nbsp &nbsp console.log('<font color='orange'>They are equal</font>');</p> \
+					} // End of If Else Statement";
+
+	div.append(text);
+	div_ex1.append(text_ex1);
+
+	$(".display").html(div);
+	$(".display").append(div_ex1);
+
+} // End of Else Statement
 
 
   // <ul class="collapsible" data-collapsible="accordion">
