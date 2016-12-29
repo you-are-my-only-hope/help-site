@@ -13,6 +13,7 @@
 	<script src="assets/js/jquery-3.1.1.min.js"></script>
 
 	<script type="text/javascript" src="assets/js/td.js"></script>
+	<script type="text/javascript" src="PDFObject/pdfobject.min.js"></script>
 
 	<!-- reset stylesheet not needed because using materialize -->
 	<!-- <link rel="stylesheet" type="text/css" href="/assets/css/reset.css"> -->
@@ -25,22 +26,17 @@
 
 	<!-- Make final css adjustments with personal stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 	
 </head>
 
 <style type="text/css">
 	
-	.cat {
 
-		margin-top: 25px;
-		margin-bottom: 25px;
-		padding-left: -200px;
-		
-	}
+.pdfobject-container { height: 500px;}
+.pdfobject { border: 1px solid #666; }
 
-	.red {
-		 font-color: red;
-	}
 
 </style>
 
@@ -63,37 +59,15 @@
 	
 	<!-- begin the materialize container -->
 
+	<button id="test">Click me</button>
 
-	<div class="row">
+	<div id="example1"></div>
 
-		 <div class="col s12 cat center-align"><span class="flow-text "><a class="waves-effect waves-teal btn-flat" id="javascript">JavaScript</a><a class="waves-effect waves-teal btn-flat" id="jQuery">jQuery</a></span>
-
-		 </div>  <!-- End of Category div -->
-
-
-
-
-	     <div class="col s3 m1 l2 table"> 
-
-			
-
-	     </div>
-
-	     <div class="col s12 m8 l9 display"> <!-- Note that "m8 l9" was added -->
-	       <!-- Teal page content
-
-	             This content will be:
-	         9-columns-wide on large screens,
-	         8-columns-wide on medium screens,
-	         12-columns-wide on small screens  -->
-
-	     </div>
-
-	   </div>
+		
 
 
 	<!-- Link to the outside javascript -->
-	<script type="text/javascript" src="assets/js/technical_docs.js"></script>
+<!-- 	<script type="text/javascript" src="assets/js/technical_docs.js"></script> -->
 
 </body>
 
