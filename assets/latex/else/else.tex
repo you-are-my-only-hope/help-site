@@ -1,0 +1,123 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{gray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+
+\title{Else Statement}
+\author{Justin Besteman}
+\date{December 30, 2016}
+
+\begin{document}
+
+
+\maketitle
+
+
+\section*{Synopsis}
+
+Statement that can be attached an If statement. \\
+
+
+\section*{Why}
+
+Allows the coder to test a condition if the condition is not met it will excuted the else statement. \\
+Instead of a coder writing two if statement to try the condition is true or not, the coder can just a if else statement. \\
+I.E
+\begin{lstlisting}
+var test = true;
+
+if (test == true) {
+
+	// If test is true...
+	// Do this
+
+} // End of If Statement
+
+if (test == false) {
+
+	// If test is false
+	// Do this
+
+} // End of If Statement
+
+// A coder can write this
+
+if (test == true) {
+
+	// If test is true
+	// Do this
+
+} else {
+
+	// If false
+	// Do this
+
+} // End of If Else Statement
+\end{lstlisting}
+
+\section*{Technicals}
+
+Else statement must have an If statement attached to it \\
+Does not take conditions to test for the condition being tested is the if statement first \\ 
+If the if statement conditions are not met it will excute the else statement \\
+Else statement is block level code so needs the curly braces 
+
+\section*{Advanced}
+
+
+
+\section*{Examples}
+
+\begin{lstlisting}
+
+var bored = true;
+
+if (bored == true) {
+
+	console.log("Watch Firefly");
+
+} else {
+
+	console.log("Don't watch Firefly");
+	// Bad example because I would still watch Firefly
+
+} // End of If Else Statement
+
+\end{lstlisting}
+
+\end{document}
