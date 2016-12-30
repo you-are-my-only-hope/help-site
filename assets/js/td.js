@@ -1,147 +1,147 @@
 $(document).ready(function(){
 
-	$("#test").click(function(){
+	// $("#test").click(function(){
 
-		PDFObject.embed("test.pdf", "#example1");
+	// 	PDFObject.embed("test.pdf", "#example1");
 
-	});
-
-
-});
-// 	$("#javascript").click(function(){
-
-// 		$(".table").html("");
-
-// 		var ul = $("<ul>");
-
-// 		ul.attr({
-// 			"class":            "collapsible",
-// 			"data-collapsible": "accordion"
-// 		}); // End ul attr 
-
-// 		var li = $("<li>");
-
-// 		ul.appendTo(".table");
-
-// 		li.appendTo(ul);
-
-// 		var div_head = $("<div>");
-// 		var div_variable = $("<div>");
-// 		var div_if = $("<div>");
-// 		var div_else = $("<div>");
-// 		var div_elseif = $("<div>");
-// 		var div_var_btn = $("<button>");
-// 		var div_if_btn = $("<button>");
-// 		var div_else_btn = $("<button>");
-// 		var div_elseif_btn = $("<button>");
-
-// 		div_head.attr({
-// 			"class": "collapsible-header",
-
-// 		}); // End of Div Head attr
-
-// 		div_head.text("JavaScript Basics");
-
-// 		div_variable.attr({
-// 			"class": "collapsible-body"
-
-// 		}); // End of Div Sub attr
-
-// 		div_if.attr({
-// 			"class": "collapsible-body"
-
-// 		});
-
-// 		div_else.attr({
-// 			"class": "collapsible-body"
-
-// 		});
-
-// 		div_elseif.attr({
-// 			"class": "collapsible-body"
-
-// 		});
-
-// 		div_var_btn.text("Variables");
-// 		div_if_btn.text("If");
-// 		div_else_btn.text("Else");
-// 		div_elseif_btn.text("Else If");
-
-// 		div_var_btn.attr({
-// 			"id": "vars",
-// 			"class": "waves-teal btn-flat center-align guide",
-// 			"data-index": "vars"
-// 		});
-
-// 		div_if_btn.attr({
-// 			"id": "if",
-// 			"class": "waves-teal btn-flat center-align guide",
-// 			"data-index": "if"
-// 		});
-
-// 		div_else_btn.attr({
-// 			"id": "else",
-// 			"class": "waves-teal btn-flat center-align guide",
-// 			"data-index": "else"
-// 		});
-
-// 		div_elseif_btn.attr({
-// 			"id": "elseif",
-// 			"class": "waves-teal btn-flat center-align guide",
-// 			"data-index": "elseif"
-// 		});
-
-// 		div_head.appendTo(li);
-// 		div_variable.appendTo(li);
-// 		div_if.appendTo(li);
-// 		div_else.appendTo(li);
-// 		div_elseif.appendTo(li);
-// 		div_var_btn.appendTo(div_variable);
-// 		div_if_btn.appendTo(div_if);
-// 		div_else_btn.appendTo(div_else);
-// 		div_elseif_btn.appendTo(div_elseif);
-
-// 		$('.collapsible').collapsible();
+	// });
 
 
-// 		$(".guide").click(function(){
 
-// 			var user = $(this);
-// 			var user_pick = user.data("index");
+	$("#javascript").click(function(){
 
-// 			console.log(user);
-// 			console.log(user_pick);
+		$(".table").html("");
 
-// 			switch(user_pick) {
+		var ul = $("<ul>");
 
-// 				case "vars":
-// 					vars();
-// 					break;
-// 				case "if":
-// 					if_statement();
-// 					break;
-// 				case "else":
-// 					else_statement();
-// 					break;
-// 				case "elseif":
-// 					elseif_statement();
-// 					break;
+		ul.attr({
+			"class":            "collapsible",
+			"data-collapsible": "accordion"
+		}); // End ul attr 
 
-// 			} // End of Switch Statement
+		var li = $("<li>");
 
-// 		}); // End of On Click Function
+		ul.appendTo(".table");
 
-// 	}); // End of JavaScript Click Event
+		li.appendTo(ul);
 
-// 	$("#jQuery").click(function(){
+		var div_head = $("<div>");
+		var div_variable = $("<div>");
+		var div_if = $("<div>");
+		var div_else = $("<div>");
+		var div_elseif = $("<div>");
+		var div_var_btn = $("<button>");
+		var div_if_btn = $("<button>");
+		var div_else_btn = $("<button>");
+		var div_elseif_btn = $("<button>");
+
+		div_head.attr({
+			"class": "collapsible-header",
+
+		}); // End of Div Head attr
+
+		div_head.text("JavaScript Basics");
+
+		div_variable.attr({
+			"class": "collapsible-body"
+
+		}); // End of Div Sub attr
+
+		div_if.attr({
+			"class": "collapsible-body"
+
+		});
+
+		div_else.attr({
+			"class": "collapsible-body"
+
+		});
+
+		div_elseif.attr({
+			"class": "collapsible-body"
+
+		});
+
+		div_var_btn.text("Variables");
+		div_if_btn.text("If");
+		div_else_btn.text("Else");
+		div_elseif_btn.text("Else If");
+
+		div_var_btn.attr({
+			"id": "vars",
+			"class": "waves-teal btn-flat center-align guide",
+			"data-index": "vars"
+		});
+
+		div_if_btn.attr({
+			"id": "if",
+			"class": "waves-teal btn-flat center-align guide",
+			"data-index": "if"
+		});
+
+		div_else_btn.attr({
+			"id": "else",
+			"class": "waves-teal btn-flat center-align guide",
+			"data-index": "else"
+		});
+
+		div_elseif_btn.attr({
+			"id": "elseif",
+			"class": "waves-teal btn-flat center-align guide",
+			"data-index": "elseif"
+		});
+
+		div_head.appendTo(li);
+		div_variable.appendTo(li);
+		div_if.appendTo(li);
+		div_else.appendTo(li);
+		div_elseif.appendTo(li);
+		div_var_btn.appendTo(div_variable);
+		div_if_btn.appendTo(div_if);
+		div_else_btn.appendTo(div_else);
+		div_elseif_btn.appendTo(div_elseif);
+
+		$('.collapsible').collapsible();
+
+
+		$(".guide").click(function(){
+
+			var user = $(this);
+			var user_pick = user.data("index");
+
+			console.log(user);
+			console.log(user_pick);
+
+			switch(user_pick) {
+
+				case "vars":
+					PDFObject.embed("assets/latex/variables/var.pdf", "#example1");
+					break;
+				case "if":
+					
+					break;
+				case "else":
+					
+					break;
+				case "elseif":
+					
+					break;
+
+			} // End of Switch Statement
+
+		}); // End of On Click Function
+
+	}); // End of JavaScript Click Event
+
+	$("#jQuery").click(function(){
 
 		
 
-// 	}); // End of jQuery Click Event
+	}); // End of jQuery Click Event
 
 
 
-// }); // End of Document Ready 
+}); // End of Document Ready 
 
 
 // function vars() {
