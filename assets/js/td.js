@@ -121,7 +121,7 @@ $(document).ready(function(){
 					PDFObject.embed("assets/latex/if/if.pdf", "#example1");
 					break;
 				case "else":
-					
+					PDFObject.embed("assets/latex/else/else.pdf", "#example1");
 					break;
 				case "elseif":
 					
