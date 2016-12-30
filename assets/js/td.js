@@ -118,7 +118,7 @@ $(document).ready(function(){
 					PDFObject.embed("assets/latex/variables/var.pdf", "#example1");
 					break;
 				case "if":
-					
+					PDFObject.embed("assets/latex/if/if.pdf", "#example1");
 					break;
 				case "else":
 					
