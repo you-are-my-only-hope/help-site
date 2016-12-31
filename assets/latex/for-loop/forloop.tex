@@ -50,12 +50,12 @@
 
 \section*{Synopsis}
 
-For Loops are great and powerful tools for looping over code for a present amount of time.\\
+For Loops are great and powerful tools for looping over code for a fixed amount of time.\\
 
 \section*{Why}
 
-A for loop can literally save a coder to write a 100 lines of code to write. \\
-Remember the array of 
+A for loop can literally save a coder from writing a 100 lines of code to write or spending hours typing. \\
+Remember the array of :
 
 \begin{lstlisting}
 //   index    0     1      3        4
@@ -68,6 +68,7 @@ greet[3]; // "Goodbye"
 \end{lstlisting}
 Can you imagine if the array is 10, 100, 1000, 10000, or 100000 items in there?
 Want happens if for the program, you had to type it all out like it was done in the example of greet \\
+Maybe you had to print it to the screen for the user to see. \\
 I would ask for a rope and barstool first before doing that.\\
 \section*{Syntax}
 
@@ -79,13 +80,13 @@ This is the general idea with for loops \\
 \textbf{Semicolons are used for seperation} not commas\\
 \\
 Start: Tells the for loop where to start counting\\
-Finish: Tells the for loop where to start or break\\
+Finish: Tells the for loop where to stop or break\\
 Counter: Tells the for loop how to count\\
 
 \section*{Advanced}
 
 Generally, a coder will use all three parameters in the for loop (start,finish,counter)\\
-But you can omit some and all the parameters if your program calla for it\\
+But you can omit some and all the parameters if your program calls for it\\
 I have been coding for a long time and I can remember on one hand how many times I had to do that 
 (and I could lose to three fingers).
 
@@ -112,7 +113,8 @@ for (var i = 0 ; i < 4 ; i++) {
 	// Second time i = 1
 	// Three time i = 2
 	// Four time i = 3
-	// Then will break because the middle condition because false 
+	// Then will break
+	// because the middle condition becomes false 
 	console.log(greet[i]);
 
 } // End of For Loop I
@@ -127,7 +129,7 @@ for (var i = 0 ; i < 4 ; i++) {
 // i < 4 - we are saying finish when this statement,
 // or condition is true or still true keep going baby!!
 // when the middle statement becomes false it will,
-// start or break out of the loop
+// stop or break out of the loop
 
 // i++ - everytime the code loops count by 1,
 // saying i++ is the samething as i = i + 1 or i += 1 
