@@ -55,9 +55,8 @@ Statement that can be attached to an If statement.
 
 \section*{Why}
 
-Allows the coder to test a condition if the condition is not met it will excuted the else statement. \\
-Instead of a coder writing two if statement to try the condition is true or not, the coder can just use a if else statement. \\
-I.E
+Allows the coder to run alternate code when the test condition in an if statement is not met. Instead of a coder writing two if statements to test whether the condition is true or not, the coder can just use an if else statement. \\
+E.G. \\
 \begin{lstlisting}
 var test = true;
 
@@ -75,9 +74,9 @@ if (test == false) {
 
 } // End of If Statement
 
-// A coder can write this
-// This will achieve the same effect 
-// With less code
+// Instead, a coder can write the following
+// which will achieve the same result 
+// with less code
 
 if (test == true) {
 
@@ -94,10 +93,7 @@ if (test == true) {
 
 \section*{Syntax}
 
-Else statement must have an If statement attached to it. \\
-Does not take conditions to test for the condition being tested is the if statement first. \\ 
-If the if statement conditions are not met it will excute the else statement. \\
-Else statement is block level code so needs the curly braces.
+Else statement must have an If statement attached to it. It does not take any conditions to test because the attached if statement does that job. If the if statement conditions are not met then the else statement is executed instead. Else statement is block level code so it uses curly braces.
 
 \section*{Advanced}
 

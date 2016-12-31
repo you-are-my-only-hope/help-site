@@ -54,16 +54,14 @@ Foundation of all logic base programming. It allows a coder to test conditions f
 
 \section*{Why}
 
-Coder will use this statement alot in coding. The if statement is the key piece of equipment in the coder's toolbox.\\
-Imagine if you want to test whether something passes a certian conidition or if something is doesn't.
+Coders will use this statement a lot in coding. The if statement is the key piece of equipment in the coder's toolbox. Think about wanting to test whether something passes a certian conidition or if it doesn't.
 
 \section*{Syntax}
 
-Starts with the keyword ``if" followed by parenthesis ``()" then curly braces $\left\{\right\}$ \\
-If statement is code that we call block leve code meaning the if statement takes up more then one line of code.\\
-When we declared variables that happen in one line so the computer just reads one line but with block level code the computer will run the code inside the $\left\{\right\}$ \\
-Inside the parenthesis, the coder will put the condition that he/she wants to test and base on the whether that condition is true or false it will excute the code inside the curly braces \\
-I.E\\
+Start with the keyword ``if" followed by parenthesis ``()" then curly braces $\left\{\right\}$ \\ \\
+If statement is code that we call block level code meaning the if statement takes up more then one line of code. When we declared variables in the past, the computer just read and executed that one line. However, with block level code the computer will read the entire code inside the curly braces $\left\{\right\}$ \\ \\
+Inside the parentheses, programmers put the condition that they want to test. Then, based on the whether that condition is true or false, the code inside the curly braces is executed or bypassed. \\ \\
+E.G.\\
 \begin{lstlisting}
 if (5 == 5) {
 
@@ -82,7 +80,7 @@ Notice the  ``==", a coder will use the double equals to ask the computer if var
 
 \section*{Advanced}
 
-The conditions does not have to just integers but can be variables like \\
+The conditions being tested do not have to just be integers, but instead can be variables like: \\
 
 \begin{lstlisting}
 var number = 5;
@@ -102,19 +100,16 @@ if (number == test){
 
 } // End of If Statement
 \end{lstlisting}
-The default of an If statement is true but a coder can change the default to false by using a ``!" \\
-So the code inside the parenthesis has to be false for the code inside the curly braces to run \\
+The default of an If statement is true but a coder can change the default to false by using a ``!". In this manner, the code inside the parenthesis then has to be false for the code inside the curly braces to run. \\
 
 \begin{lstlisting}
-if (5 != 5) {
+if !(6 == 5) {
 
 	console.log("They are not equal");
 
 } // End of If Statement
 \end{lstlisting}
-A coder can test multiple conditions in the parenthesis but using the \&\& or  $\Vert$ \\
-\&\& means ``and" so the conditions have to be true \\
-$\Vert$ means ``or" so one of the conditions have to be true
+A coder can test multiple conditions in the parenthesis but using the \&\& or  $\Vert$. \&\& means ``and" so both conditions have to be true for the test to evaluate as true. $\Vert$ means ``or" so one (or both) of the conditions have to be true for the test to evaluate as true.
 
 \begin{lstlisting}
 
@@ -127,9 +122,9 @@ if (number == 5 && number > 1) {
 } // End of If Statement
 
 
-if (number == 5 || number > 1) {
+if (number == 5 || number < 1) {
 
-	console.log("The number is equal to 5 or it is greater than 5");
+	console.log("The number is equal to 5 or it is less than 5");
 
 } // End of If Statement
 
