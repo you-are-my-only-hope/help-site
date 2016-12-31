@@ -1,0 +1,172 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{gray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+
+\title{For Loop }
+\author{Justin Besteman}
+\date{December 30, 2016}
+
+\begin{document}
+
+
+\maketitle
+
+
+\section*{Synopsis}
+
+For Loops are great and powerful tools for looping over code for a present amount of time.\\
+
+\section*{Why}
+
+A for loop can literally save a coder to write a 100 lines of code to write. \\
+Remember the array of 
+
+\begin{lstlisting}
+//   index    0     1      3        4
+var greet = ["Hi","Bye","Hello","Goodbye"];
+
+greet[0]; // "Hi"
+greet[1]; // "Bye"
+greet[2]; // "Hello"
+greet[3]; // "Goodbye"
+\end{lstlisting}
+Can you imagine if the array is 10, 100, 1000, 10000, or 100000 items in there?
+Want happens if for the program, you had to type it all out like it was done in the example of greet \\
+I would ask for a rope and barstool first before doing that.\\
+\section*{Syntax}
+
+For Loops start with keyword ``for" and follow by parenthesis\\
+It is block level code so(drumroll please) curly braces $\lbrace\rbrace$ \\
+Inside the parenthesis can get tricky but stay calm and code\\
+for (start ; finish ; counter) \\
+This is the general idea with for loops \\
+\textbf{Semicolons are used for seperation} not commas\\
+\\
+Start: Tells the for loop where to start counting\\
+Finish: Tells the for loop where to start or break\\
+Counter: Tells the for loop how to count\\
+
+\section*{Advanced}
+
+Generally, a coder will use all three parameters in the for loop (start,finish,counter)\\
+But you can omit some and all the parameters if your program calla for it\\
+I have been coding for a long time and I can remember on one hand how many times I had to do that 
+(and I could lose to three fingers).
+
+\section*{Examples}
+
+\begin{lstlisting}
+
+// ---------------------- Example 1 ----------------
+
+//   index    0     1      2        3
+var greet = ["Hi","Bye","Hello","Goodbye"];
+
+greet[0]; // "Hi"
+greet[1]; // "Bye"
+greet[2]; // "Hello"
+greet[3]; // "Goodbye"
+
+// Instead doing this we can do this
+
+for (var i = 0 ; i < 4 ; i++) {
+
+	// The i is going to be changing through every loop
+	// First time i = 0
+	// Second time i = 1
+	// Three time i = 2
+	// Four time i = 3
+	// Then will break because the middle condition because false 
+	console.log(greet[i]);
+
+} // End of For Loop I
+
+// Lets breakdown what is in the parenthesis
+
+// var i = 0 - we are saying start counter 0 
+// when you are looping through an array you,
+// generally want to start at 0 because that is where,
+// array will start counting from
+
+// i < 4 - we are saying finish when this statement,
+// or condition is true or still true keep going baby!!
+// when the middle statement becomes false it will,
+// start or break out of the loop
+
+// i++ - everytime the code loops count by 1,
+// saying i++ is the samething as i = i + 1 or i += 1 
+
+
+// ---------------------- Example 2 ----------------
+
+//   index    0     1      2        3
+var greet = ["Hi","Bye","Hello","Goodbye"];
+
+for (var i = 3 ; i >= 0 ; i--){
+
+	// This will console log from the back of the array
+	// to the front rather then front to back
+	console.log(greet[i]);
+
+} // End of For Loop I
+
+// This for loop counts down instead of counting up
+// Notice >= this mean greater or equal too
+// <= this less then or equal too
+
+
+// ---------------------- Example 3 ----------------
+
+//   index    0     1      2        3
+var greet = ["Hi","Bye","Hello","Goodbye"];
+
+var start = 0;
+var finish = 4;
+
+for (start ; start < finish ; start++){
+
+
+	console.log(greet[start]);
+
+} // End of For Loop Start
+
+
+\end{lstlisting}
+
+\end{document}
