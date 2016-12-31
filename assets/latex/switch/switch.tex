@@ -1,0 +1,198 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\usepackage{color}
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{gray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{lightgray},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+
+\title{Template }
+\author{Justin Besteman}
+\date{December 30, 2016}
+
+\begin{document}
+
+
+\maketitle
+
+
+\section*{Synopsis}
+
+Switch are powerful tool for a coder to test many conditions
+
+\section*{Why}
+
+If a coder is testing only a few conditions then a if, else if, else if are perfect tools to use. \\
+But want if there are vast number of things to test. A coder could still use those tools mentioned before \\
+but you better get some ice to cool off the fingers when you are done.\\
+A switch statement is way to reduce the amount code that needs to be tested
+
+\section*{Syntax}
+
+The switch statement is structure like a train track system where the rails switch (you see what I did there) base on a certian case is achieve. \\
+With this tool, you have a switch and cases that will be excuted based on the condition of the switch. \\
+After each case, you must use the keywork break for if you don't bad things happen to good people.\\
+A switch statement is block lever code so without the break it excuted all the condition after the condition that is met.
+
+\section*{Advanced}
+
+Switch statement have the ability to ``Stack case on top of each other" (My mentor, Sean, taught me that) \\
+Meaning you can have more then one condition or case that can be met for that code to excute. \\
+At the end of the switch statement, a coder may put the keyword ``default" \\
+This will be triggered if none of the condition are met. 
+
+\section*{Examples}
+
+\begin{lstlisting}
+
+// ----------------- Example 1 ------------------
+
+var traffic_light = "green";
+
+switch (traffic_light) {
+
+	case "green":
+		console.log("Go");
+		break;
+	case "yellow":
+		console.log("Speed up or slow down");
+		break;
+	case "red":
+		console.log("Stop, Stop, Stoopppp!!!");
+		break;
+		
+} // End of Switch Statement
+
+// ----------------- Example 2 ------------------
+
+var user_pick = 3;
+
+switch (user_pick) {
+
+	case 1:
+		console.log("User 1");
+		break;
+	case 2:
+		console.log("User 2");
+		break;
+	case 3:
+		console.log("User 3");
+		break;
+	case 4:
+		console.log("User 4");
+		break;
+	case 5:
+		console.log("User 5");
+		break;
+		
+} // End of Switch Statement
+
+// ----------------- Example 3 ------------------
+
+// This shows how cases can be stacked
+
+var user_pick = 3;
+
+switch (user_pick) {
+
+	case "one":
+	case 1:
+		console.log("User 1");
+		break;
+	case "two":
+	case 2:
+		console.log("User 2");
+		break;
+	case "three":
+	case 3:
+		console.log("User 3");
+		break;
+	case "four":
+	case 4:
+		console.log("User 4");
+		break;
+	case "five":
+	case 5:
+		console.log("User 5");
+		break;
+		
+} // End of Switch Statement
+
+// So this is powerful because if you allow the,
+// user enter their choices and if they entered in,
+// a integers or string it will still work 
+
+// ----------------- Example 4 ------------------
+
+// This shows the default keyword
+
+var user_pick = 3;
+
+switch (user_pick) {
+
+	case "one":
+	case 1:
+		console.log("User 1");
+		break;
+	case "two":
+	case 2:
+		console.log("User 2");
+		break;
+	case "three":
+	case 3:
+		console.log("User 3");
+		break;
+	case "four":
+	case 4:
+		console.log("User 4");
+		break;
+	case "five":
+	case 5:
+		console.log("User 5");
+		break;
+	default:
+		console.log("Invalid input");
+		break;
+		
+} // End of Switch Statement
+
+// Very awesome here
+// With this default statement you test,
+// The user input and say if it is not valid
+
+\end{lstlisting}
+
+
+\end{document}

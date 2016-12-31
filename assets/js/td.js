@@ -88,10 +88,10 @@ $(document).ready(function(){
 					PDFObject.embed("assets/latex/else/else.pdf", "#example1");
 					break;
 				case "Else If Statement":
-					PDFObject.embed("assets/latex/else/elseif.pdf", "#example1");
+					PDFObject.embed("assets/latex/elseif/elseif.pdf", "#example1");
 					break;
-				case "Switch":
-					
+				case "Switch Statement":
+					PDFObject.embed("assets/latex/switch/switch.pdf", "#example1");
 					break;
 
 			} // End of Switch Statement
