@@ -36,7 +36,7 @@ $(document).ready(function(){
 		div_head.appendTo(li);
 
 		// JavaScript Foundations Subjects
-		var jf_subjects = ["Variables" , "If Statement"  , "Else Statement" , "Else If Statement" , "Switch Statement"];
+		var jf_subjects = ["Variables" , "Array", "If Statement"  , "Else Statement" , "Else If Statement" , "Switch Statement"];
 
 		for (var i = 0; i < jf_subjects.length; i++) {
 			
@@ -79,6 +79,9 @@ $(document).ready(function(){
 
 				case "Variables":
 					PDFObject.embed("assets/latex/variables/var.pdf", "#example1");
+					break;
+				case "Array":
+					PDFObject.embed("assets/latex/array/array.pdf", "#example1");
 					break;
 				case "If Statement":
 					PDFObject.embed("assets/latex/if/if.pdf", "#example1");
