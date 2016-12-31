@@ -50,14 +50,99 @@
 
 \section*{Synopsis}
 
+Else If statement allows a code to test multiple conditions.
 
 \section*{Why}
 
-\section*{Technicals}
+We have see what the If statement and the Else statement can do. They do a great job of testing conditions that are binary in natural.\\
+Like, a person is of legal drinking age or not, a person is either male or female, 5 is equal to 5 or not, and so on. \\
+The If and Else statement are great for those types of conditions that if one is true then the other is false and vica versa.
+But sometimes are condition is not binary but poly(many). \\
+The traffic light is green, yellow, or red.\\
+A person can take a left, right, straight, or turn around. \\
+
+\section*{Syntax}
+
+Else if has to have an If statement attach to it.\\
+It is block level code and very similar to the if statement. After the first if statement, a coder will write ``Else If" and a condition to test
 
 \section*{Advanced}
 
+A coder can use as many ``Else If"" statement as needed but if there is many condition to test, I would suggest implement another coding technique could a switch statement
+
 \section*{Examples}
 
+\begin{lstlisting}
+
+// ------------------- Example 1 ---------------------
+
+var traffic_light = "yellow";
+
+if (traffic_light == "grean") {
+
+	console.log("Go");
+
+} else if (traffic_light == "yellow") {
+
+	console.log("Speed up to make the light or stop");
+
+} else if (traffic_light == "red") {
+
+	console.log("Please stop! Think of the Children");
+
+} // End of the If Else If Statement
+
+
+// ------------------- Example 2 ---------------------
+
+// Notice you can change this statement like this
+
+var traffic_light = "yellow";
+
+if (traffic_light == "grean") {
+
+	console.log("Go");
+
+} else if (traffic_light == "yellow") {
+
+	console.log("Speed up to make the light or stop");
+
+} else {
+
+	console.log("Please stop! Think of the Children");
+
+} // End of the If Else If Statement
+
+// Both of example 1 and 2 will do the same,
+// If the light is not green or yellow it has to be red
+
+// ------------------- Example 3 ---------------------
+
+var user_pick = 3;
+
+if (user_pick == 1) {
+
+	console.log("User picks 1");
+
+} else if (user_pick == 2) {
+
+	console.log("User picks 2");
+
+} else if (user_pick == 3) {
+
+	console.log("User picks 3");
+
+} else if (user_pick == 4) {
+
+	console.log("User picks 4");
+
+} else {
+
+	console.log("User picks 5");	
+
+}
+
+
+\end{lstlisting}
 
 \end{document}
