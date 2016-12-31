@@ -6,10 +6,6 @@ $(document).ready(function(){
 
 	// });
 
-
-
-	$("#javascript").click(function(){
-
 		$(".table").html("");
 
 		var ul = $("<ul>");
@@ -25,15 +21,10 @@ $(document).ready(function(){
 
 		li.appendTo(ul);
 
+		// JavaScript Foundation, Functions, Objects, Ajax  ---- Categories
+		// 
+
 		var div_head = $("<div>");
-		var div_variable = $("<div>");
-		var div_if = $("<div>");
-		var div_else = $("<div>");
-		var div_elseif = $("<div>");
-		var div_var_btn = $("<button>");
-		var div_if_btn = $("<button>");
-		var div_else_btn = $("<button>");
-		var div_elseif_btn = $("<button>");
 
 		div_head.attr({
 			"class": "collapsible-header",
@@ -42,65 +33,37 @@ $(document).ready(function(){
 
 		div_head.text("JavaScript Basics");
 
-		div_variable.attr({
-			"class": "collapsible-body"
-
-		}); // End of Div Sub attr
-
-		div_if.attr({
-			"class": "collapsible-body"
-
-		});
-
-		div_else.attr({
-			"class": "collapsible-body"
-
-		});
-
-		div_elseif.attr({
-			"class": "collapsible-body"
-
-		});
-
-		div_var_btn.text("Variables");
-		div_if_btn.text("If");
-		div_else_btn.text("Else");
-		div_elseif_btn.text("Else If");
-
-		div_var_btn.attr({
-			"id": "vars",
-			"class": "waves-teal btn-flat center-align guide",
-			"data-index": "vars"
-		});
-
-		div_if_btn.attr({
-			"id": "if",
-			"class": "waves-teal btn-flat center-align guide",
-			"data-index": "if"
-		});
-
-		div_else_btn.attr({
-			"id": "else",
-			"class": "waves-teal btn-flat center-align guide",
-			"data-index": "else"
-		});
-
-		div_elseif_btn.attr({
-			"id": "elseif",
-			"class": "waves-teal btn-flat center-align guide",
-			"data-index": "elseif"
-		});
-
 		div_head.appendTo(li);
-		div_variable.appendTo(li);
-		div_if.appendTo(li);
-		div_else.appendTo(li);
-		div_elseif.appendTo(li);
-		div_var_btn.appendTo(div_variable);
-		div_if_btn.appendTo(div_if);
-		div_else_btn.appendTo(div_else);
-		div_elseif_btn.appendTo(div_elseif);
 
+		// JavaScript Foundations Subjects
+		var jf_subjects = ["Variables" , "If Statement" , "Else Statement" , "Else Statement" , "Else If Statement"];
+
+		for (var i = 0; i < jf_subjects.length; i++) {
+			
+			var div9 = $("<div>");
+
+			div9.attr({
+				"class": "collapsible-body"
+			});
+
+			var btn9 = $("<button>");
+
+			btn9.text(jf_subjects[i]);
+
+			btn9.attr({
+				"id": jf_subjects[i],
+				"class": "waves-teal btn-flat center-align guide",
+				"data-index": jf_subjects[i]
+			});
+
+			div9.appendTo(li);
+
+			btn9.appendTo(div9);
+
+
+		} // End of For Loop I 
+
+		
 		$('.collapsible').collapsible();
 
 
@@ -114,14 +77,18 @@ $(document).ready(function(){
 
 			switch(user_pick) {
 
-				case "vars":
+				case "Variables":
 					PDFObject.embed("assets/latex/variables/var.pdf", "#example1");
 					break;
-				case "if":
+				case "If Statement":
 					PDFObject.embed("assets/latex/if/if.pdf", "#example1");
 					break;
+
 				case "else":
 					PDFObject.embed("assets/latex/else/else.pdf", "#example1");
+
+				case "Else Statement":
+
 					break;
 				case "elseif":
 					
@@ -131,7 +98,7 @@ $(document).ready(function(){
 
 		}); // End of On Click Function
 
-	}); // End of JavaScript Click Event
+
 
 	$("#jQuery").click(function(){
 
