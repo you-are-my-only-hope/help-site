@@ -54,8 +54,8 @@ For Loops are great and powerful tools for looping over code for a fixed amount 
 
 \section*{Why}
 
-A for loop can literally save a coder from hours of typing countless lines of unnecessary code. \\ \\
-Remember this array:
+A for loop can literally save a coder from writing a 100 lines of code to write or spending hours typing. \\
+Remember the array of :
 
 \begin{lstlisting}
 //   index    0     1      3        4
@@ -66,22 +66,29 @@ greet[1]; // "Bye"
 greet[2]; // "Hello"
 greet[3]; // "Goodbye"
 \end{lstlisting}
-Can you imagine if the array had 10, 100, 1000, 10000, or 100000 items in there? What would you do if you needed to print out all the values in the array to the screen? Imagine if you had to type out a line for each value like in the above example? I would first ask for a rope and barstool before doing that!\\
+Can you imagine if the array is 10, 100, 1000, 10000, or 100000 items in there?
+Want happens if for the program, you had to type it all out like it was done in the example of greet \\
+Maybe you had to print it to the screen for the user to see. \\
+I would ask for a rope and barstool first before doing that.\\
 \section*{Syntax}
 
-For Loops start with the keyword ``for" followed by parentheses, and then since this is block level code we have (drumroll please) curly braces $\lbrace\rbrace$ \\ \\
-The contents of the curly braces will be code that you want to run, but first let's talk about the parentheses. The contents inside the parentheses can get tricky but stay calm and let's code. The general format is: \\
+For Loops start with keyword ``for" and follow by parenthesis\\
+It is block level code so(drumroll please) curly braces $\lbrace\rbrace$ \\
+Inside the parenthesis can get tricky but stay calm and code\\
 for (start ; finish ; counter) \\
+This is the general idea with for loops \\
+\textbf{Semicolons are used for seperation} not commas\\
+\\
 Start: Tells the for loop where to start counting\\
 Finish: Tells the for loop where to stop or break\\
-Counter: Tells the for loop how to count\\ \\
-
-This is the general formatting within the parentheses with for loops. Just remember, \textbf{semicolons are used for seperation} not commas!\\
-\\
+Counter: Tells the for loop how to count\\
 
 \section*{Advanced}
 
-Generally, a coder will use all three parameters in the for loop (start, finish, counter), but you can omit some parameters if your program calls for it. I have been coding for a long time, but I could lose three fingers and still count on one hand how many times I've had to do that.
+Generally, a coder will use all three parameters in the for loop (start,finish,counter)\\
+But you can omit some and all the parameters if your program calls for it\\
+I have been coding for a long time and I can remember on one hand how many times I had to do that 
+(and I could lose to three fingers).
 
 \section*{Examples}
 
@@ -112,16 +119,16 @@ for (var i = 0 ; i < 4 ; i++) {
 
 } // End of For Loop I
 
-// Let's break down what is in the parenthesis
+// Lets breakdown what is in the parenthesis
 
-// var i = 0 - we are saying start counter at 0 
+// var i = 0 - we are saying start counter 0 
 // when you are looping through an array you,
-// generally want to start at 0 because that is where
+// generally want to start at 0 because that is where,
 // array will start counting from
 
-// i < 4 - we are saying when this statement 
+// i < 4 - we are saying finish when this statement,
 // or condition is true or still true keep going baby!!
-// when the middle statement becomes false it will
+// when the middle statement becomes false it will,
 // stop or break out of the loop
 
 // i++ - everytime the code loops count by 1,
