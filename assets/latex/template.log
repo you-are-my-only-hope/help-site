@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.29)  3 JAN 2017 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.12.29)  3 JAN 2017 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -385,6 +385,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count95
 ))
+Package color Info: Redefining color lightgray on input line 7.
+
 (./template.aux)
 \openout1 = `template.aux'.
 
@@ -415,30 +417,30 @@ LaTeX Font Info:    ... okay on input line 45.
 \MPnumerator=\count101
 \makeMPintoPDFobject=\count102
 \everyMPtoPDFconversion=\toks19
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 49.
- [2] (./template.aux) ) 
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./template.aux) ) 
 Here is how much of TeX's memory you used:
- 2962 strings out of 493013
- 37312 string characters out of 6135681
- 92694 words of memory out of 5000000
- 6534 multiletter control sequences out of 15000+600000
+ 2961 strings out of 493013
+ 37301 string characters out of 6135681
+ 92669 words of memory out of 5000000
+ 6533 multiletter control sequences out of 15000+600000
  5924 words of font info for 22 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  26i,6n,40p,237b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
-fb>
-Output written on template.pdf (2 pages, 31321 bytes).
+</usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on template.pdf (1 page, 30888 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 20 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
