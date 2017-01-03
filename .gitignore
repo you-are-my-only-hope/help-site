@@ -1,34 +1,34 @@
 .DS_Store
-array.aux
-array.log
-array.synctex.gz
+assets/latex/array/array.aux
+assets/latex/array/array.log
+assets/latex/array/array.synctex.gz
 
-else.aux
-else.log
-else.synctex.gz
+assets/latex/else/else.aux
+assets/latex/else/else.log
+assets/latex/else/else.synctex.gz
 
-elseif.aux
-elseif.log
-elseif.synctex.gz
+assets/latex/elseif/elseif.aux
+assets/latex/elseif/elseif.log
+assets/latex/elseif/elseif.synctex.gz
 
-forloop.aux
-forloop.log
-forloop.synctex.gz
+assets/latex/for-loop/forloop.aux
+assets/latex/for-loop/forloop.log
+assets/latex/for-loop/forloop.synctex.gz
 
-if.aux
-if.log
-if.synctex.gz
+assets/latex/if/if.aux
+assets/latex/if/if.log
+assets/latex/if/if.synctex.gz
 
-switch.aux
-switch.log
-switch.synctex.gz
+assets/latex/switch/switch.aux
+assets/latex/switch/switch.log
+assets/latex/switch/switch.synctex.gz
 
-var.aux
-var.log
-var.synctex.gz
+assets/latex/var/var.aux
+assets/latex/var/var.log
+assets/latex/var/var.synctex.gz
 
-template.aux
-template.log
-template.synctex.gz
+assets/latex/template.aux
+assets/latex/template.log
+assets/latex/template.synctex.gz
 
 
