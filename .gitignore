@@ -1,6 +1,6 @@
 .DS_Store
 
-*.log
-*.aux
-*.synctex.gz
-
+**/*.log
+**/*.aux
+**/*.synctex.gz
+**/*.out
