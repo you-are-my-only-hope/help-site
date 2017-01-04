@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 			btn9.attr({
 				"id": jf_subjects[i],
-				"class": "waves-teal btn-flat center-align guide",
+				"class": "waves-teal btn-flat center-align guide-js",
 				"data-index": jf_subjects[i]
 			});
 
@@ -67,7 +67,7 @@ $(document).ready(function(){
 		$('.collapsible').collapsible();
 
 
-		$(".guide").click(function(){
+		$(".guide-js").click(function(){
 
 			var user = $(this);
 			var user_pick = user.data("index");
@@ -102,6 +102,85 @@ $(document).ready(function(){
 			} // End of Switch Statement
 
 		}); // End of On Click Function
+
+		var ul = $("<ul>");
+
+		ul.attr({
+			"class":            "collapsible",
+			"data-collapsible": "accordion"
+		}); // End ul attr 
+
+		var li = $("<li>");
+
+		ul.appendTo(".table");
+
+		li.appendTo(ul);
+
+		// JavaScript Foundation, Functions, Objects, Ajax  ---- Categories
+		// 
+
+		var div_head = $("<div>");
+
+		div_head.attr({
+			"class": "collapsible-header",
+
+		}); // End of Div Head attr
+
+		div_head.text("Prototypes");
+
+		div_head.appendTo(li);
+
+		// JavaScript Foundations Subjects
+		var proto_subjects = ["length" , "push", "indexOf","splice"];
+		for (var i = 0; i < proto_subjects.length; i++) {
+			
+			var div9 = $("<div>");
+
+			div9.attr({
+				"class": "collapsible-body"
+			});
+
+			var btn9 = $("<button>");
+
+			btn9.text(proto_subjects[i]);
+
+			btn9.attr({
+				"id": proto_subjects[i],
+				"class": "waves-teal btn-flat center-align guide-proto",
+				"data-index": proto_subjects[i]
+			});
+
+			div9.appendTo(li);
+
+			btn9.appendTo(div9);
+
+
+		} // End of For Loop I 
+
+		$(".guide-proto").click(function(){
+
+			var user = $(this);
+			var user_pick = user.data("index");
+
+			switch(user_pick){
+
+				case "length":
+					PDFObject.embed("assets/latex/prototype/length/length.pdf", "#example1");
+					break;
+				case "push":
+					PDFObject.embed("assets/latex/prototype/push/push.pdf", "#example1");
+					break;
+				case "indexOf":
+					PDFObject.embed("assets/latex/prototype/indexof/indexof.pdf", "#example1");
+					break;
+				case "splice":
+					PDFObject.embed("assets/latex/prototype/splice/splice.pdf", "#example1");
+					break;
+
+
+			} // End of Switch Statement
+
+		}); // End of guide proto click event
 
 
 }); // End of Document Ready 
