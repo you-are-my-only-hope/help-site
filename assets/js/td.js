@@ -54,7 +54,7 @@ $(document).ready(function(){
 				"id": jf_subjects[i],
 				"class": "waves-teal btn-flat center-align guide-js",
 				"data-index": jf_subjects[i],
-				"onclick": "ga('send', 'event', 'pdf', 'reading', " + jf_subjects[i] + ");"
+				"onclick": "ga('send', 'event', 'pdf', 'reading', '" + jf_subjects[i] + "');"
 			});
 
 			div9.appendTo(li);
