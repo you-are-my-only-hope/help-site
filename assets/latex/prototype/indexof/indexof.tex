@@ -8,7 +8,7 @@
 \definecolor{purple}{rgb}{0.65, 0.12, 0.82}
 
 \lstdefinelanguage{JavaScript}{
-  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break,indexOf},
   keywordstyle=\color{blue}\bfseries,
   ndkeywords={class, export, boolean, throw, implements, import, this},
   ndkeywordstyle=\color{darkgray}\bfseries,
@@ -47,7 +47,7 @@
     urlcolor=cyan,
 }
 
-\title{Template }
+\title{IndexOf}
 \author{Justin Besteman}
 \date{Reviewed by Ali Zaidi}
 
@@ -60,16 +60,97 @@
 
 \section*{Synopsis}
 
+A powerful prototype for searching an array from a certian element.
 
 \section*{Why}
 
+When a coder makes an array, there is going to be a lot of times when he/she need to know if a certian  element or item is in the array. \\
+Say a coder what to have a search field where it allows the user to enters a search to find out if it is there are or not
+
 \section*{Syntax}
 
+The syntax is very simple \\
+The name of the array and indexOf() connected by a dot or period.\\
+Inside the parenthesis, you include what you want to see what is in the array.
+
 \section*{Advanced}
+
+The return value of indexOf will be the number of the index the element is at.\\
+If the value is not found it, return value will be -1.\\
+This will not return multiple numbers meaning if the element you are searching for is in the array multiple time it will only return the first index that element appears in.
+
 
 \section*{Examples}
 
 \begin{lstlisting}
+// ---------------- Example 1 -----------------
+
+var magic = [1,4,3,2,5,99];
+
+magic.indexOf(4); // 1
+magic.indexOf(99); // 6
+magic.indexOf(6); // -1
+
+// ---------------- Example 2 -----------------
+
+var meatloaf = ["Dashboard", "two-thirds","Dry Eye"];
+
+var song = meatloaf.indexOf("Dry Eye");
+
+// song is now 2 
+
+var other_song = meatloaf.indexOf("dashboard");
+
+// other_song is equal to  -1 it is case sensitive 
+
+// ---------------- Example 3 -----------------   
+
+var dream = ["clouds","daydreamn","sunshine","toothfairy"];
+
+var check = dream.indexOf("daydreamn");
+
+if (check != -1) {
+
+	console.log("We are daydreaming now");
+
+} // End of If Statement
+
+// ---------------- Example 4 -----------------
+
+var dream = ["clouds","daydreamn","sunshine","toothfairy"];
+
+var check = dream.indexOf("daydreamn");
+
+if (check >= 0) {
+
+	console.log("We are daydreaming now");
+
+} // End of If Statement
+
+// ---------------- Example 5 -----------------
+
+var dream = ["clouds","daydreamn","sunshine","toothfairy"];
+
+var check = "daydream";
+
+if (dream.indexOf(check) >= 0) {
+
+	console.log("We are daydreaming now");
+
+} // End of If Statement
+
+// ---------------- Example 6 -----------------
+
+var numbers = [1,2,2,3,3,3];
+
+numbers.indexOf(2); // 1
+numbers.indexOf(3); // 3
+
+// Remember
+// indexOf will return the index of what 
+// you are searching for 
+// WILL NOT return multiple indexes 
+
 
 \end{lstlisting}
 
