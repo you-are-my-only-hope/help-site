@@ -148,7 +148,8 @@ $(document).ready(function(){
 			btn9.attr({
 				"id": proto_subjects[i],
 				"class": "waves-teal btn-flat center-align guide-proto",
-				"data-index": proto_subjects[i]
+				"data-index": proto_subjects[i],
+				"onclick": "ga('send', 'event', 'pdf', 'reading', '" + proto_subjects[i] + "');"
 			});
 
 			div9.appendTo(li);
