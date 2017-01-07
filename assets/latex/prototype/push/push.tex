@@ -57,43 +57,37 @@
 
 \section*{Synopsis}
 
-This will allow a coder to add items to a declared array.
+Push allows a programmer to add items to a declared array.
 
 \section*{Why}
 
-When a coder declares an array, that coder might need to update the array with other items. \\
-So if a coder writes a list of movies that he/she owns like\\
+After a coder declares an array, they may need to update the array with other items. I.E., if a coder writes a list of movies that he/she owns like: 
 \begin{lstlisting}
-var movie = ["The Thing","Firefly","Rush Hour", "Friday"];
+var movie = ["The Thing", "Firefly", "Rush Hour", "Friday"];
 \end{lstlisting}
-What happens if the coder buys another movie the coder would want a way to add the movie to the array.
+What happens if the coder buys another movie? They would want a way to add the movie to the array.
 \section*{Syntax}
-To do this you need to state the name of the array\\
-Then you need to write push connected with a ``." \\
-After the push, you write parenthesis ``()"\\
-Inside the parenthesis, you place want you want to be added to the array
+To add to an array, you need to state the name of the array, followed by a ``." and then the word push. Immediately after push, you have parentheses ``()". Inside the parentheses, you place what you want to add to the array.
 \section*{Advanced}
 
-The element that is being added will be added to the end of the array. \\
-So think of reloading bullets in to a magazine, you push the bullets on the top of the magazine.\\
-This will change the result of .length on an array. 
+The element that is being added gets added to the end of the array. Think of reloading bullets into a magazine. As you add bullets they get placed on the top end of the magazine. Pushing new values, of course, also changes the result of .length on the array. 
 
 \section*{Examples}
 
 \begin{lstlisting}
 // ------------------ Example 1 -----------------------
 
-var movie = ["The Thing","Firefly","Rush Hour", "Friday"];
+var movie = ["The Thing", "Firefly", "Rush Hour", "Friday"];
 
 movie.push("Angel"); 
-// ["The Thing","Firefly","Rush Hour", "Friday", "Angel"]
+// ["The Thing", "Firefly", "Rush Hour", "Friday", "Angel"]
 
 // ------------------ Example 2 -----------------------
 
-var movie = ["The Thing","Firefly","Rush Hour", "Friday"];
+var movie = ["The Thing", "Firefly", "Rush Hour", "Friday"];
 
-movie.push("Angel" , "Fight Club"); 
-// ["The Thing","Firefly","Rush Hour", "Friday", "Angel" ,"Fight Club"]
+movie.push("Angel", "Fight Club"); 
+// ["The Thing", "Firefly", "Rush Hour", "Friday", "Angel", "Fight Club"]
 
 // ------------------ Example 3 -----------------------
 

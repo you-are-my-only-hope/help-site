@@ -60,25 +60,19 @@
 
 \section*{Synopsis}
 
-A powerful prototype for searching an array from a certian element.
+A powerful prototype for searching an array for a certain element.
 
 \section*{Why}
 
-When a coder makes an array, there is going to be a lot of times when he/she need to know if a certian  element or item is in the array. \\
-Say a coder what to have a search field where it allows the user to enters a search to find out if it is there are or not
+When working with arrays, there are going to be times when a coder needs to know if a certain element or item is in the array. For example, a coder may want to have a search field where a user may enter a search term to check whether that item exists or not.
 
 \section*{Syntax}
 
-The syntax is very simple \\
-The name of the array and indexOf() connected by a dot or period.\\
-Inside the parenthesis, you include what you want to see what is in the array.
+The syntax is very simple. The name of the array and indexOf() connected by a dot or period. Inside the parentheses you list the item you wish to search for within the array.
 
 \section*{Advanced}
 
-The return value of indexOf will be the number of the index the element is at.\\
-If the value is not found it, return value will be -1.\\
-This will not return multiple numbers meaning if the element you are searching for is in the array multiple time it will only return the first index that element appears in.
-
+The return value of indexOf is the index number identifying the location of the item within the array. If the item is not found in the array then the returned value is -1. If the item exists many times within the array then only the index number of the first occurrance within the array is returned.\\
 
 \section*{Examples}
 
@@ -88,12 +82,12 @@ This will not return multiple numbers meaning if the element you are searching f
 var magic = [1,4,3,2,5,99];
 
 magic.indexOf(4); // 1
-magic.indexOf(99); // 6
+magic.indexOf(99); // 5
 magic.indexOf(6); // -1
 
 // ---------------- Example 2 -----------------
 
-var meatloaf = ["Dashboard", "two-thirds","Dry Eye"];
+var meatloaf = ["Dashboard", "two-thirds", "Dry Eye"];
 
 var song = meatloaf.indexOf("Dry Eye");
 
@@ -101,13 +95,13 @@ var song = meatloaf.indexOf("Dry Eye");
 
 var other_song = meatloaf.indexOf("dashboard");
 
-// other_song is equal to  -1 it is case sensitive 
+// other_song is equal to -1 because the search is case sensitive 
 
 // ---------------- Example 3 -----------------   
 
-var dream = ["clouds","daydreamn","sunshine","toothfairy"];
+var dream = ["clouds", "daydreaming", "sunshine", "toothfairy"];
 
-var check = dream.indexOf("daydreamn");
+var check = dream.indexOf("daydreaming");
 
 if (check != -1) {
 
@@ -117,9 +111,9 @@ if (check != -1) {
 
 // ---------------- Example 4 -----------------
 
-var dream = ["clouds","daydreamn","sunshine","toothfairy"];
+var dream = ["clouds", "daydreaming", "sunshine", "toothfairy"];
 
-var check = dream.indexOf("daydreamn");
+var check = dream.indexOf("daydreaming");
 
 if (check >= 0) {
 
@@ -129,9 +123,9 @@ if (check >= 0) {
 
 // ---------------- Example 5 -----------------
 
-var dream = ["clouds","daydreamn","sunshine","toothfairy"];
+var dream = ["clouds", "daydreaming", "sunshine", "toothfairy"];
 
-var check = "daydream";
+var check = "daydreaming";
 
 if (dream.indexOf(check) >= 0) {
 
@@ -146,14 +140,17 @@ var numbers = [1,2,2,3,3,3];
 numbers.indexOf(2); // 1
 numbers.indexOf(3); // 3
 
-// Remember
-// indexOf will return the index of what 
-// you are searching for 
-// WILL NOT return multiple indexes 
+// Remember: indexOf will only return the index
+// of the first occurance of your search item. It
+// WILL NOT return multiple indexes
 
 
 \end{lstlisting}
 
 \section*{Further Reading}
+
+\href{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf}{MDN - indexOf}\\
+\\
+\href{http://www.w3schools.com/jsref/jsref_indexof_array.asp}{w3schools - indexOf}\\
 
 \end{document}

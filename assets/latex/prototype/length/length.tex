@@ -60,19 +60,18 @@
 
 \section*{Synopsis}
 
-Length is one of the most used prototype of an array. 
+Length is one of the most often used prototypes of arrays. 
 
 \section*{Why}
 
-Often, when I say often I mean all the time, a coder will want to know the length of an array. This is needed to be enable to 
-know how many items/indexs are in the array to loop over or search through. \\
-Say that a coder puts the amount of movies they own or a company owns into an array:
+Often (and when I say often I mean all the time) a programmer will want to know the length of an array. The length lets the programmer know how many items (indexes) are in the array to loop over or search through. \\ \\
+Let's say that a programmer stores the movies they own into an array:
 \begin{lstlisting}
-var movie = ["The Thing","Firefly","Rush Hour", "Friday the 13th"];
+var movie = ["The Thing", "Firefly", "Rush Hour", "Friday the 13th"];
 \end{lstlisting}
-To find out how movies there are, all you need to do is run the prototype length on the array.
+To find out how movies are stored in the array, all they need to do is run the prototype length on the array.
 \section*{Syntax}
-The syntax is very easy. The name of the array and then length
+The syntax is very easy. The name of the array and then length:
 \begin{lstlisting}
 movie.length // 4
 \end{lstlisting}
@@ -90,8 +89,8 @@ array_numbers.length // 5
 
 // ------------------ Example 2 --------------
 
-// length is very powerful when you use it,
-// with a for loop when you want to loop over it
+// length is very powerful when you use it
+// with a for loop to loop over the stored items
 
 var greet = ["hi" , "bye" , "hello" , "goodbye"];
 
@@ -103,7 +102,7 @@ for (var i = 0 ; i < length ; i++){
 
 } // End of For Loop
 
-// ------------------ Example 2 --------------
+// ------------------ Example 3 --------------
 
 var greet = ["hi" , "bye" , "hello" , "goodbye"];
 
@@ -116,8 +115,9 @@ for (var i = 0 ; i < greet.length ; i++){
 } // End of For Loop
 
 
-// You don't need to make a seperate variable
-// If you don't want to
+// Note: You don't need to make a seperate variable
+// for the length if you don't want to, and can instead
+// just write greet.length when referring to it
 
 
 		
